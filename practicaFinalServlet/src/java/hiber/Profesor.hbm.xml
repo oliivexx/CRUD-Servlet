@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-may-2020 12:22:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hiber.Profesor" table="profesor" catalog="servlet" optimistic-lock="version">
+        <id name="codProfe" type="java.lang.Integer">
+            <column name="codProfe" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="42" not-null="true" />
+        </property>
+        <property name="apellido1" type="string">
+            <column name="apellido1" length="42" not-null="true" />
+        </property>
+        <property name="dni" type="string">
+            <column name="dni" length="42" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
